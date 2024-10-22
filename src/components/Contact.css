@@ -1,0 +1,117 @@
+.bg-img4 {
+    background: url(../images/address-image.jpg);
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gradient-bg1 {
+    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+}
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.opacity-8 {
+    opacity: .8;
+}
+.address-text {
+    padding: 7.5rem 0;
+}
+.title h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.title p {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.address-social li {
+    display: inline-block;
+}
+.address-social a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid transparent;
+    transition: background-color .2s ease-in-out;
+}
+.address-social a:hover {
+    background-color: #ffffff;
+}
+.facebook-text-hvr:hover {
+    color: #4267B2 !important;
+}
+.twitter-text-hvr:hover {
+    color: #1DA1F2 !important;
+}
+.google-text-hvr:hover {
+    color: #DB4437 !important;
+}
+.linkedin-text-hvr:hover {
+    color: #0077B5 !important;
+}
+.instagram-text-hvr:hover {
+    color: #C32AA3 !important;
+}
+
+.contact-form {
+    max-width: 750px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+.contact-form .form-control {
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 12px 0;
+    background: #fff;
+    letter-spacing: .7px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: none;
+    height: 44px;
+    color: #a5a5a5;
+    font-size: 14px;
+    position: relative;
+    transition: border .9s ease;
+}
+.contact-form textarea {
+    min-height: 175px;
+    resize: none;
+}
+.form-control::placeholder {
+    color: #c2c2c2;
+    opacity: 1;
+} 
+@media (max-width: 768px){
+    iframe{
+        height: 300px;
+    }
+    .address-text {
+        padding: 2.5rem 0;
+    }
+    .title h2 {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .contact-form button{
+        margin-bottom: 30px;
+    }
+}

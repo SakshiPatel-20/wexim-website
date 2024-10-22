@@ -1,0 +1,88 @@
+
+.feature-skill-box {
+    padding: 0 80px;
+}
+.feature-skill-box .title {
+    margin-bottom: 3rem;
+}
+.team-progress {
+    padding-bottom: 1rem;
+}   
+.team-progress .progress-item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.team-progress .progress-item .count {
+    font-weight: 500;
+}
+.team-progress .progress {
+    height: 12px;
+    margin-top: 12px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: #eaeaea;
+}
+.team-progress .progress-bar {
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+    animation: progress 2.8s;
+
+    
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+.team-progress {
+    list-style: none;
+    padding: 0;
+}
+.progress-section .btn.btn-transparent-black {
+    background: transparent;
+    border-color: #2b2b2b;
+    color: #2b2b2b;
+}
+
+.progress-section .btn.btn-large {
+    font-size: 14px;
+    padding: 9px 34px;
+    line-height: 25px;
+}
+.progress-section .btn.btn-transparent-black:hover, 
+.btn.btn-transparent-black:focus {
+    background: #2b2b2b !important;
+    color: #ffffff !important;
+}
+.progress-item span {
+    display: flex;
+}
+@keyframes progress {
+    from { width: 0 }
+    to   { width: 'brand.width'}
+}
+
+@media (max-width: 768px) {
+    .feature-skill-box {
+        padding: 2.5rem 20px;
+    }
+    .feature-half {
+        width: 100%;
+        object-fit: contain;
+    }
+    .feature-box .item-number {
+        padding: 1.5rem 0;
+    }
+    .services-section .title {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 1200px) {
+    .feature-skill-box {
+        padding: 2.5rem 20px;
+    }
+}

@@ -1,0 +1,30 @@
+.footer-social a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin: 10px 5px;
+    border: 1px solid transparent;
+    transition: background-color .2s ease-in-out;
+}
+.company-about {
+    font-size: 13px;
+}
+.footer-social li {
+    display: inline-block;
+}
+p {
+    margin-bottom: 0;
+    color: #6d6d6d;
+}
+.footer-social li a:hover {
+    background-color: #00bcd4;
+
+}
+.footer-social li a:hover i{
+    color: #ffffff;
+}
+

@@ -1,0 +1,58 @@
+
+.title h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.gradient-text1 {
+    background: #3264f5;
+    background: -moz-linear-gradient(left, #3264f5 2%, #7202bb 82%);
+    background: -webkit-linear-gradient(left, #3264f5 2%, #7202bb 82%);
+    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.services-section p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #6d6d6d;
+}
+.services-section .title {
+    margin-bottom: 3rem;
+}
+.feature-box .item-number {
+    padding: 2.5rem 0;
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Parallax */
+
+.parallax {
+    padding: 7.5rem 0;
+}
+.parallax.bg-img9 {
+    background: url(../images/bg-img6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.parallax .opacity-4 {
+    opacity: .4;
+}
+.parallax .parallax-box {
+    padding: 3rem 0;
+    text-align: center;
+}
+.parallax .parallax-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.parallax .btn.btn-blue {
+    background: #00bcd4;
+    border-color: #00bcd4;
+    color: #ffffff;
+}

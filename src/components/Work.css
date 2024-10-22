@@ -1,0 +1,156 @@
+#work::before {
+    top: 0;
+}
+#work::before, #work::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    height: 90px;
+    width: 100%;   
+    bottom: -19px; 
+}
+.itemshadow .cbp-item-wrapper {
+    box-shadow: 0 0 4px 1px rgba(101, 101, 101, 0.2);
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+.border-portfolio .cbp-item img {
+    border: 20px solid #fff;
+    width: 100%;
+
+}
+.overlay-two {
+    position: absolute;
+    left: 20px;
+    left: 20px;
+    top: 21px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    /* transition: all .5s ease-in .1s; */
+}
+.overlay-two:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3264f5;
+    background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+    opacity: .7;
+}
+
+.overlay-two > h4, .overlay-two > p {
+    position: relative;
+    color: #ffffff;
+}
+/* .work-section .cbp-item{
+    position: relative;
+} */
+.bottom-text {
+    display: table;
+}
+.bottom-text > .cells {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+}
+.bottom-text p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.bottom-text .port_head {
+    font-weight: 600;
+    font-size: 5.625rem;
+    line-height: 1;
+}
+.cbp-item:hover .overlay-two {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plus i{
+    font-size: 2rem;
+    color: white;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .cbp-item.itemshadow {
+        width: 100% !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .cbp-item{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+    }
+    .border-portfolio {
+        height:  100% !important;
+    }
+    #work::before, #work::after{
+        display: none;
+    }
+    .bottom-text > .cells {
+        display: block;
+    }
+    .bottom-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .cbp-item.itemshadow {
+        width: 100% !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .cbp-item{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+    }
+    .border-portfolio {
+        height:  100% !important;
+    }
+    #work::before, #work::after{
+        display: none;
+    }
+    .bottom-text > .cells {
+        display: block;
+    }
+    .bottom-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .border-portfolio .text_wrap {
+        text-align: center;
+    }
+}

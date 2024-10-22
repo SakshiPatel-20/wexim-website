@@ -1,0 +1,79 @@
+.third-color {
+    color: #00bcd4;
+}
+.title h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.title p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #6d6d6d;
+}
+.btn.btn-gradient {
+    color: #ffffff;
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+}
+.btn.btn-large {
+    font-size: 14px;
+    padding: 9px 34px;
+    line-height: 25px;
+}
+.btn {
+    display: inline-block;
+    font-size: 17px;
+    border: 2px solid transparent;
+    letter-spacing: .5px;
+    line-height: inherit;
+    border-radius: 0;
+    text-transform: capitalize;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition-duration: 0.3s;
+    transition: all 0.3s !important;
+    transition-timing-function: ease-in-out;
+}
+.btn.btn-gradient:hover {
+    background-position: right center;
+}
+.blog-section .blog-half-text .btn, .blog-section .blog-half-text .btn:hover{
+    color: white;
+}
+.hover-effect::before, .hover-effect::after {
+    content: "";
+    background: #fff;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    position: absolute;
+    transition-duration: 1.3s;
+}
+.hover-effect::before {
+    right: 0;
+    opacity: 1;
+    top: 0;
+}
+.hover-effect::after {
+    bottom: 0;
+    opacity: .7;
+    left: 0;
+}
+.hover-effect:hover::after, .hover-effect:hover::before {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+   .blog-half-image img {
+        object-fit: contain;
+        width: 100%;
+   }
+   .blog-section .blog-half-text {
+    padding-top: 2.5rem;
+   }
+}
