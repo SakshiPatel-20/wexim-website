@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      {/* <Loader /> */}
+      <Loader />
       <Navbar />
       <Home />
       <Footer />
