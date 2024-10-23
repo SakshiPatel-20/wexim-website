@@ -12,14 +12,35 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setNavScroll(window.scrollY >= 20);
+      setNavScroll(window.scrollY >= 200);
+
+      document.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll(".page-links");
+        const navLinks = document.querySelectorAll(".nav-link");
+  
+        let currentSection = "";
+  
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 60;
+          if (window.scrollY  >= sectionTop) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+  
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+      
     };
-    
+
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-    
   }, []);
-  
 
   const mobileMenu = [
     { href: '#home', text: 'Home' },
@@ -54,7 +75,12 @@ const Navbar = () => {
           <div className="collapse navbar-collapse">
             <div className="navbar-nav w-100 alt-font">
               {mobileMenu.slice(0, 4).map((item, index) => (
-                <a key={index} className={`nav-link scroll`} href={item.href}>
+                <a
+                  key={index}
+                  className={`nav-link scroll`}
+                  href={item.href}
+                  
+                >
                   {item.text}
                 </a>
               ))}
@@ -62,7 +88,11 @@ const Navbar = () => {
                 <img src={navScroll ? BlackLogo : WhiteLogo} alt="Logo" />
               </div>
               {mobileMenu.slice(4).map((item, index) => (
-                <a key={index + 4} className={`nav-link scroll`} href={item.href}>
+                <a
+                  key={index + 4}
+                  className={`nav-link scroll`}
+                  href={item.href}
+                >
                   {item.text}
                 </a>
               ))}
@@ -79,14 +109,18 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className='side-menu-div'>
-          <div className="side-menu side-menu-active">
+          <div className={`side-menu ${isMenuOpen ? 'side-menu-active' : ''}`}>
             <div className="inner-wrapper">
               <span className="btn-close" onClick={toggleMenu}></span>
               <nav className="side-nav w-100">
                 <ul className="navbar-nav">
                   {mobileMenu.map((menu, menuKey) => (
                     <li className="nav-item" key={menuKey}>
-                      <a className={`nav-link scroll`} href={menu.href} onClick={toggleMenu}>
+                      <a
+                        className='nav-link scroll'
+                        href={menu.href}
+                        onClick={toggleMenu}
+                      >
                         {menu.text}
                       </a>
                     </li>
@@ -108,6 +142,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
     </>
   );
 };

@@ -38,7 +38,7 @@ const MobileApp = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 1000,
+        speed: 200,
         autoplaySpeed: 3500,
         cssEase: "linear"
     };
@@ -60,7 +60,7 @@ const MobileApp = () => {
     );
 
     return (
-        <section id="app">
+        <section id="app" className='page-links'>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 text-center wow fadeIn">

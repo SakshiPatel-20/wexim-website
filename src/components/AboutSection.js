@@ -26,7 +26,7 @@ function AboutSection() {
  
   return (
     <>
-      <section id="about" className="p-0 progress-section">
+      <section id="about" className="p-0 progress-section page-links">
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-6">

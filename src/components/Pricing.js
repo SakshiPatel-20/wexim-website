@@ -42,7 +42,7 @@ function Pricing() {
 
     return (
         <>
-            <section id="price" className='price-section'>
+            <section id="price" className='price-section page-links'>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center wow fadeIn">

@@ -5,7 +5,7 @@ import BlogImage from '../images/blog-half1.jpg'
 function Blog() {
   return (
     <>
-       <section id="blog" className="bg-light p-0 blog-section">
+       <section id="blog" className="bg-light p-0 blog-section page-links">
             <div className="container-fluid">
 
                 <div className="row align-items-center">

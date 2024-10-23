@@ -21,30 +21,32 @@
 .mobileSlider .slick-prev, .mobileSlider .slick-next{
     display: none !important;
 }
-/* @media (min-width: 320px) and (max-width: 360px) {
-    .mobileSlider{
-        left: 90px;
+@media (min-width: 320px) {
+
+    .title h2 {
+        line-height: 1.2;
+    } 
+    .mobileSlider {
+        position: absolute;
+        width: 143px;
+        height: 258px;
     }
-}
-@media (min-width: 390px) {
-    .mobileSlider{
-        left: 78px;
+    .app-image img{
+        max-width: 170px;
     }
-}
-@media (min-width: 412px) and (max-width: 420px){
-    .mobileSlider{
-        left: 90px;
-    }
-}
-@media (min-width: 430px) {
-    .mobileSlider{
-        left: 98px;
-    }
-} */
+  }
 @media (max-width: 768px) {
     .app-image{
         margin-bottom: 3rem;
     }
 }
-
+@media (min-width: 1024px) {
+    .mobileSlider {
+        width: 235px;
+        height: 420px;
+    }
+    .app-image img{
+        max-width: 280px;
+    }
+}
 

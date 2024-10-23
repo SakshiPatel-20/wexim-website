@@ -28,30 +28,13 @@ function Teams() {
                     dots: true,
                 },
             },
-            {
-                breakpoint: 820,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                    rows: 1,
-                },
-            },
+            
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                    rows: 1,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    rows: 1,
+                    rows: 2,
                 },
             },
         ],
@@ -96,7 +79,7 @@ function Teams() {
     ];
 
     return (
-        <section id="team" className='team-slider'>
+        <section id="team" className='team-slider page-links'>
             <div className="container">
                 <div className="row wow fadeIn">
                     <div className="col-md-12 text-center">

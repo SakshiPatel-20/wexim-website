@@ -118,6 +118,14 @@
 .counter-row .counter-item h6 {
     font-weight: 300;
 }
+
+@media (min-width: 320px) {
+
+    .price-two  {
+        padding: 2rem;
+        text-align: center;
+    } 
+}
 @media (max-width: 1200px) {
     .counter-row .counter-item{
         text-align: center;

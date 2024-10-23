@@ -26,7 +26,6 @@
     border-radius: 50px;
     background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
     animation: progress 2.8s;
-
     
 }
 
@@ -65,7 +64,11 @@
     from { width: 0 }
     to   { width: 'brand.width'}
 }
-
+@media (max-width: 1200px) {
+    .feature-skill-box {
+        padding: 2.5rem 20px;
+    }
+}
 @media (max-width: 768px) {
     .feature-skill-box {
         padding: 2.5rem 20px;
@@ -81,8 +84,18 @@
         margin-bottom: 1rem;
     }
 }
-@media (max-width: 1200px) {
+@media (min-width: 425px) {
     .feature-skill-box {
-        padding: 2.5rem 20px;
+        padding: 5.5rem 0px;
+    }
+}
+@media (min-width: 320px) {
+    .progress-section .title h2{
+        line-height: 1.2;
+        text-align: center;
+    }
+    .feature-skill-box {
+        padding: 5.5rem 20px;
+        text-align: center;
     }
 }

@@ -82,8 +82,13 @@
     color: white;
     position: relative;
 }
-
-@media (max-width: 768px) {
+@media (min-width: 320px) {
+    .border-portfolio  {
+        display: flex;
+        flex-direction: column;
+    } 
+}
+@media (min-width: 280px) and (max-width: 820px) {
     .cbp-item.itemshadow {
         width: 100% !important;
         position: relative !important;
@@ -102,6 +107,37 @@
         bottom: 0 !important;
         width: 100% !important;
     }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .cbp-item {
+        width: 450px !important ;
+    }
+    .border-portfolio {
+        height:  1450px !important;
+    }
+    .cbp-item.order:nth-child(1) {
+        right: 55px !important;
+    }
+
+    .cbp-item.portfolio2 {
+        right: 55px !important;
+    }
+    .cbp-item.portfolio3 {
+        left: 47px !important;
+        top: 530px !important;
+    }
+    .cbp-item.portfolio4 {
+        right: 55px !important;
+        top: 930px !important;
+        
+    }
+    #work::before, #work::after{
+        bottom: 0px;
+    }
+
+}
+@media (max-width: 768px) {
+   
     .border-portfolio {
         height:  100% !important;
     }
@@ -118,30 +154,10 @@
     }
 }
 @media (max-width: 1200px) {
-    .cbp-item.itemshadow {
-        width: 100% !important;
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .cbp-item{
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        width: 100% !important;
-    }
-    .border-portfolio {
-        height:  100% !important;
-    }
-    #work::before, #work::after{
+    
+    /* #work::before, #work::after{
         display: none;
-    }
+    } */
     .bottom-text > .cells {
         display: block;
     }
@@ -154,3 +170,20 @@
         text-align: center;
     }
 }
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .cbp-item.order:nth-child(1) {
+        right: 105px !important;
+    }
+    .cbp-item.portfolio2 {
+        right: 105px !important;
+    }
+    .cbp-item.portfolio3 {
+        left: 165px !important;
+        top: 630px !important;
+    }
+    .cbp-item.portfolio4 {
+        right: 105px !important;
+        top: 1025px !important;
+    }
+}
+

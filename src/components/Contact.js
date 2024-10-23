@@ -37,7 +37,7 @@ function Contact() {
     ];
   return (
     <>
-        <section id="contact" className="p-0">
+        <section id="contact" className="p-0 page-links">
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-md-6 order-md-2 p-0">

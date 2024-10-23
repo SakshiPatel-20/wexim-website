@@ -33,11 +33,12 @@
 .parallax {
     padding: 7.5rem 0;
 }
-.parallax.bg-img9 {
+.bg-img9 {
     background: url(../images/bg-img6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center 0px;
     position: relative;
 }
 .parallax .opacity-4 {
@@ -55,4 +56,16 @@
     background: #00bcd4;
     border-color: #00bcd4;
     color: #ffffff;
+}
+
+@media (min-width: 320px) {
+    .parallax .parallax-box h2{
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .parallax .parallax-box h2{
+        font-size: 2.5rem;
+    }
 }
